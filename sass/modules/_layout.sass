@@ -1,7 +1,7 @@
 .video-banner
     height: 92.5vh
     .textual
-        padding: calc( (92.5vh - 124px)/2 ) 15px
+        padding: calc( (92.5vh - 217px)/2 ) 15px
         color: #FFF
     #video-viewport
         position: absolute
@@ -29,3 +29,39 @@
         z-index: 0
     .fullsize-video-bg .container
         text-align: center
+
+
+
+.footer
+    padding-top: 30px
+    padding-bottom: 30px
+    background: $yellow
+    .media-links
+        text-align: right
+    .icons 
+        text-align: right
+        i
+            font-size: 17px
+        a
+            background: #fff
+            color: #00091B
+            height: 40px
+            width: 40px
+            display: block
+            float: right
+            padding: 10px 0
+            text-align: center
+            margin: 0 0 0 15px
+            border-radius: 50px
+            border: 2px solid #fff
+            transition: all 200ms ease
+            text-decoration: none
+            position: relative
+            &:hover, &:active
+                color: $red
+                border-color: $red
+                background: none
+                cursor: pointer !important
+                transform: scale(1.2)
+                -webkit-transform: scale(1.2)
+                text-decoration: none
