@@ -37,11 +37,12 @@
             min-height: calc(100vh - 61px)
             @include bgdef
         .swiper-pagination-bullet
-            background: #000
+            background: $red
             border: none
-            opacity: .5
+            opacity: 1
         .swiper-pagination-bullet-active
             opacity: 1
+            background: $yellow
         .swiper-wrapper
             .blog.slide-container
                 padding: 30vh 0 20vh
@@ -55,7 +56,8 @@
     .initial-slide
         .slide-container
             background-color: #999
-            background-position: top right
+            background-attachment: fixed
+            background-position: center
             background-size: contain
     .swiper-container
         width: 100vw
@@ -77,6 +79,18 @@
             margin: 0
 
 
+
+.partners 
+    .partner 
+        .img
+            content: ''
+            background: rgba(253, 205, 10, 0.2)
+            height: 125px
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 100px
+        .img.vertical
+            background-size: 70px
 
 
 .footer

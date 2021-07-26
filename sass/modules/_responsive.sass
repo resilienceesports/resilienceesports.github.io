@@ -1,96 +1,20 @@
 @media (min-width: 768px)
     .read-more-but
         display: none
-    .inclusion
-        .hide-content
-            max-height: 210px
-            overflow: hidden
-            transition: all 0.5s ease-in-out
-            &::before
-                content: ''
-                width: 100%
-                height: 30px
-                position: absolute
-                bottom: 20px
-                background: linear-gradient(to bottom, transparent 0%, #FFF 80%, #FFF 100%)
-        .hide-content.active
-            max-height: initial
-            &::before
-                display: none
                 
-@media (min-width: 1025px) and (max-width: 1280px)
-    .banner
-        .content-container
-            padding: 200px 0 186px
-        .image-container
-            .blob-image, .banner-image
-                height: 600px
-    .inclusion .hide-content
-        max-height: 265px
-    .footer .link img
-        margin-right: 10px
+// @media (min-width: 1025px) and (max-width: 1280px)
 
-@media (min-width: 992px) and (max-width: 1024px)
-    .banner .image-container, .domain .image-container
-        height: 60vh
-    .domain .text-container .text
-        max-height: 300px
-    .tab-content .left-icon, .tab-content .right-icon
-        min-height: 300px
-    .tab-content .left-icon .glyphicon, .tab-content .right-icon .glyphicon
-        font-size: 1.6em
+// @media (min-width: 992px) and (max-width: 1024px)
 
-@media (min-width: 768px) and (max-width: 991px)
-    .banner .image-container, .domain .image-container
-        height: 40vh
-    .overview, .purpose, .methodology, .conclusion
-        padding-bottom: 75px
-    .findings
-        padding-bottom: 25px
-    .domain .text-container .text
-        max-height: 300px
-        padding-left: 40px
-        padding-right: 65px
-    .tab-content .left-icon, .tab-content .right-icon
-        min-height: 300px
-    .tab-content 
-        .left-icon
-            justify-content: left
-            padding-left: 0
-        .right-icon 
-            justify-content: right
-            padding-right: 0
-        .left-icon, .right-icon 
-            .glyphicon
-                font-size: 1em
-    .inclusion .imgcontainer60 img
-        width: 90%
-        margin-left: 5%
-    .ummeed-bio 
-        .text-cont
-            &:before, &:after
-                width: 60px
-            &:before
-                left: -27.5px
-            &:after
-                right: -27.5px
-    .findings .nav-pills 
-        li a
-            height: 150px
-            width: 150px
-        li.active::after
-            bottom: -50px
-    .footer-links 
-        .mail
-            padding-top: 5px
-        .redbutton a
-            .img-cont
-                padding-top: 12px
-                padding-bottom: 12px
-                img
-                    width: 33%
-            .text-cont
-                width: 70%
+// @media (min-width: 768px) and (max-width: 991px)
+
+@media (min-width: 992px)
+    .partners .logo-container .partner:nth-child(4n+1)
+        clear: both
+
+@media (min-width: 768px)
+    .partners .logo-container .partner:nth-child(n+5)
+        padding-top: 30px;
 
 @media (max-width: 767px)
     .hide-content
@@ -113,127 +37,6 @@
         cursor: pointer
     .read-more-text
         display: none
-    .banner .image-container
-        height: 60vw
-    .overview, .purpose, .methodology, .conclusion
-        padding-top: 40px
-        padding-bottom: 40px
-    .exec-summary, .inclusion, .findings
-        padding-bottom: 0
-    .overview, .purpose, .methodology, .conclusion, .inclusion, .domain
-        .hide-content
-            max-height: 210px
-            overflow: hidden
-            transition: all 0.5s ease-in-out
-        .hide-content.active
-            max-height: initial
-    .title-underline 
-        span::after, span:before
-            height: 3px
-    .overview
-        .header .menulist ul 
-            li.button
-                margin-left: calc((100% - 50%)/2)
-                width: 50%
-    .inclusion
-        .title-colored
-            text-align: center
-    .ummeed-bio
-        .container
-            .row
-                margin-right: 0
-                margin-left: 0
-        .text-cont
-            padding: 30px
-            &:before, &:after
-                transform: rotate(90deg) scale(0.5)
-            &:before
-                top: -140px
-                left: initial
-                right: 40px
-            &:after
-                bottom: -140px
-                right: initial
-                left: 40px
-            .binding
-                background-repeat: repeat
-                background-size: 100%
-                background-position: left
-                background-image: url('./img/binding-xs.png')
-    .domain-content
-        &>.tab-pane
-            display: block
-            opacity: 1
-            .domain
-                padding-top: 0
-                padding-bottom: 20px
-            .text-container
-                display: none
-        &>.active
-            .domain
-                padding-bottom: 40px
-            .text-container
-                display: block
-            .image-container
-                .title-rainbow-colored
-                    .text
-                        &::after
-                            content: "\e113"
-    .domain 
-        .image-container
-            height: 175px
-            border-radius: 10px
-            align-items: flex-end
-            padding: 0
-            .container
-                padding: 0
-                width: 100%
-            .title-rainbow-colored
-                margin: 0
-                div, .text
-                    display: block
-                .text
-                    text-align: left
-                    padding: 10px
-                    background: rgba(255,255,255,0.8)
-                    border-radius: 0
-                    &::after
-                        content: "\e114"
-                        display: inline-block
-                        font-family: 'Glyphicons Halflings'
-                        font-style: normal
-                        cursor: pointer
-                        font-size: 0.6em
-                        padding: 0.2em 0.85em
-                        border-radius: 50%
-                        color: #FFF
-                        font-weight: 700
-                        background: $red
-                        transition: all 0.5s ease-in-out
-                        position: absolute
-                        right: 10px
-                        bottom: 7px
-                .bg
-                    display: none
-        .text-container 
-            padding-top: 10px
-            .hide-content::before
-                height: 50px
-                bottom: 0
-            .text
-                max-height: initial
-                overflow-y: initial
-                padding-right: 0
-                padding-left: 0
-    .footer-links
-        .redbutton
-            margin-left: calc((100% - 50%)/2)
-            width: 50%
-        .mail
-            .img-cont
-                margin-left: 19px
-            .text-cont
-                padding-top: 5px
 
 @media (max-width: 320px)
     .banner h1
