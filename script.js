@@ -4,14 +4,12 @@ $(document).ready(function(){
     var min_w = 300;
     var vid_w_orig;
     var vid_h_orig;
-
     $(function() {
         vid_w_orig = parseInt($('video').attr('width'));
         vid_h_orig = parseInt($('video').attr('height'));
         $(window).resize(function () { fitVideo(); });
         $(window).trigger('resize');
     });
-
     function fitVideo() {
         $('#video-viewport').width($('.fullsize-video-bg').width());
         $('#video-viewport').height($('.fullsize-video-bg').height());
@@ -24,5 +22,26 @@ $(document).ready(function(){
         $('#video-viewport').scrollLeft(($('video').width() - $('.fullsize-video-bg').width()) / 2);
         $('#video-viewport').scrollTop(($('video').height() - $('.fullsize-video-bg').height()) / 2);
     };
+
+
+    if($("#banner-slider").length){
+        var bannerslider = new Swiper('#banner-slider .swiper-container', {
+            spaceBetween: 0,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            grabCursor: true,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+            },
+            speed: 1000
+        });
+    }
 
 });

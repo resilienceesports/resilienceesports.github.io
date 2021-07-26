@@ -30,6 +30,53 @@
     .fullsize-video-bg .container
         text-align: center
 
+#banner-slider
+    .swiper-container
+        .slide-container
+            padding: 20vh 0
+            min-height: calc(100vh - 61px)
+            @include bgdef
+        .swiper-pagination-bullet
+            background: #000
+            border: none
+            opacity: .5
+        .swiper-pagination-bullet-active
+            opacity: 1
+        .swiper-wrapper
+            .blog.slide-container
+                padding: 30vh 0 20vh
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next, .swiper-button-next, .swiper-container-rtl .swiper-button-prev
+        color: $yellow !important
+        outline: none !important
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next
+        left: 25px !important
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev
+        right: 25px !important
+    .initial-slide
+        .slide-container
+            background-color: #999
+            background-position: top right
+            background-size: contain
+    .swiper-container
+        width: 100vw
+        height: calc(100vh - 81px)
+        margin-left: auto
+        margin-right: auto
+        .swiper-slide
+            min-width: 0
+        .swiper-pagination-bullets
+            right: 25px
+    .slider-card
+        .card
+            background: #FFF
+            box-shadow: 0 4px 4px rgba(0,0,0,0.25)
+            padding: 40px 35px
+        .title
+            margin: 0 0 30px
+        .mini
+            margin: 0
+
+
 
 
 .footer
