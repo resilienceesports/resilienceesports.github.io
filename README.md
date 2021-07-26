@@ -1,2 +1,2 @@
-# revolutionesportsuk.github.io
+# resilienceesports.github.io
 Static Website
