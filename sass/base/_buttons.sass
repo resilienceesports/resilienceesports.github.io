@@ -1,58 +1,38 @@
 .but
-    display: inline-block
-    cursor: pointer
+    color: #FFF
+    background: $red
+    display: block
+    padding: 10px 15px
     text-decoration: none
     text-align: center
+    font-weight: 400
     outline: none !important
-    position: relative
-    margin-left: 10px
-    .but-content
-        display: block
-        z-index: 5
-        border: 3px solid #222
-        background: #FFF
-        position: relative
-        color: #222
-        padding: 14px 60px
-        transition: all 0.25s ease-in-out
+    border-radius: 6px
+    &:hover, &:focus
+        outline: none !important
+        background: $yellow
+        color: $red
 
-.but.p3 
-    .but-content
-        padding: 10px 40px
-
-.but::after
-    content: ''
+.but2
     background: #FFF
-    height: 105%
-    width: 100%
-    z-index: 2
-    border: 3px solid #222
-    -webkit-transform: translate(-10px, 10px)
-    transform: translate(-10px, 10px)
+    color: $red
+    border: 1px solid $red
+    &:hover, &:focus
+        background: $yellow
+        border-color: $yellow
+        color: #000
+
+.but.full
     display: block
-    position: absolute
-    left: 0
-    top: 0
-    transition: all 0.25s ease-in-out
+    width: 100%
     
-.but:hover, .but:focus
-    .but-content
-        background: #222
-        color: #FFF
-        -webkit-transform: translate(-10px, 10px)
-        transform: translate(-10px, 10px)
+.but.fullbut
+    display: block
 
-.block-but
-    display: inline-block
-    padding: 1rem 2.6rem
-    margin-top: 1rem
-    background: #FFF
-    color: #222222
+.but-container
+    .but
+        display: inline-block
 
-.block-but.blu
-    background: $red
-    padding: 5px 15px
-    color: #FFF
-    font-weight: 700
-    &:hover
-        background: #222
+@media (max-width: 767px)
+    .but
+        padding: 10px 20px
