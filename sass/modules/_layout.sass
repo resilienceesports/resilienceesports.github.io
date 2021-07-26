@@ -20,7 +20,7 @@
         overflow: hidden
     .fullsize-video-bg:before
         content: ""
-        background: rgba(0,0,0,.35)
+        background: rgba(0,0,0,0.5)
         position: absolute
         top: 0
         left: 0
@@ -93,6 +93,37 @@
 
 .partners 
     .partner 
+        position: relative
+        &::after
+            content: ''
+            z-index: 1
+            position: absolute
+            height: 180px
+            width: 180px
+            top: calc( 50% - 90px )
+            left: calc( 50% - 90px )
+            animation: spin 4s linear infinite
+            border-radius: 50%
+            box-shadow: inset 0 0 50px #fff, inset 20px 0 60px $yellow, inset -20px 0 60px #3B09C9, inset 20px 0 300px $yellow, inset -20px 0 300px #3B09C9, 0 0 50px #fff, -10px 0 60px $yellow, 10px 0 60px #3B09C9
+        .img
+            content: ''
+            height: 270px
+            background-repeat: no-repeat
+            background-position: center
+            background-size: 220px
+            z-index: 3
+        .img.vertical
+            background-size: 70px
+
+@keyframes spin
+    0% 
+        transform: rotate(0deg)
+    100% 
+        transform: rotate(360deg)
+
+
+.supporters 
+    .supporter 
         .img
             content: ''
             background: rgba(253, 205, 10, 0.2)
