@@ -1,0 +1,58 @@
+.but
+    display: inline-block
+    cursor: pointer
+    text-decoration: none
+    text-align: center
+    outline: none !important
+    position: relative
+    margin-left: 10px
+    .but-content
+        display: block
+        z-index: 5
+        border: 3px solid #222
+        background: #FFF
+        position: relative
+        color: #222
+        padding: 14px 60px
+        transition: all 0.25s ease-in-out
+
+.but.p3 
+    .but-content
+        padding: 10px 40px
+
+.but::after
+    content: ''
+    background: #FFF
+    height: 105%
+    width: 100%
+    z-index: 2
+    border: 3px solid #222
+    -webkit-transform: translate(-10px, 10px)
+    transform: translate(-10px, 10px)
+    display: block
+    position: absolute
+    left: 0
+    top: 0
+    transition: all 0.25s ease-in-out
+    
+.but:hover, .but:focus
+    .but-content
+        background: #222
+        color: #FFF
+        -webkit-transform: translate(-10px, 10px)
+        transform: translate(-10px, 10px)
+
+.block-but
+    display: inline-block
+    padding: 1rem 2.6rem
+    margin-top: 1rem
+    background: #FFF
+    color: #222222
+
+.block-but.blu
+    background: $red
+    padding: 5px 15px
+    color: #FFF
+    font-weight: 700
+    &:hover
+        background: #222
