@@ -1,7 +1,7 @@
 .video-banner
     height: 92.5vh
     .textual
-        padding: calc( (92.5vh - 217px)/2 ) 15px
+        padding: calc( (92.5vh - 337px)/2 ) 15px
         color: #FFF
     #video-viewport
         position: absolute
@@ -36,6 +36,14 @@
             padding: 20vh 0
             min-height: calc(100vh - 61px)
             @include bgdef
+            &:after
+                content: ''
+                height: 40%
+                width: 100%
+                position: absolute
+                left: 0
+                bottom: 0
+                background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8))
         .swiper-pagination-bullet
             background: $red
             border: none
@@ -56,7 +64,6 @@
     .initial-slide
         .slide-container
             background-color: #999
-            background-attachment: fixed
             background-position: center
             background-size: contain
     .swiper-container
@@ -78,7 +85,11 @@
         .mini
             margin: 0
 
-
+.follower
+    .imager
+        .bgww
+            background: rgba(255,255,255,0.7)
+            border-radius: 10px
 
 .partners 
     .partner 
