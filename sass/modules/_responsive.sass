@@ -21,6 +21,54 @@
         padding-top: 30px;
 
 @media (max-width: 767px)
+    .video-banner 
+        video
+            opacity: 0
+        .textual
+            padding: 17.5vh 0
+    .video-banner, .follower, .laureus
+        .buttonlist
+            .col-xs-12:nth-child(n+2)
+                margin-top: 15px
+    .follower
+        padding-bottom: 0
+        .textual
+            .title
+                text-align: center
+        .pad30
+            padding: 0 0 30px
+    #banner-slider 
+        .swiper-button-next, .swiper-button-prev
+            display: none
+        .swiper-container .swiper-wrapper .blog.slide-container
+            padding: 35vh 0 0
+        .slider-card .card
+            padding: 30px
+    .laureus
+        .textual
+            padding: 0 15px
+        .title
+            text-align: center
+    .partners 
+        padding-bottom: 0
+        .partner::after
+            height: 140px
+            width: 140px
+        .partner 
+            .img
+                background-size: 180px
+    .supporters 
+        .supporter .img
+            height: 110px
+            background-size: 75px
+        .supporter:nth-child(n+3)
+            margin-top: 20px
+    .footer
+        p
+            margin-bottom: 30px
+        .icons
+            a
+                float: left
     .hide-content
         &::before
             content: ''
@@ -42,26 +90,4 @@
     .read-more-text
         display: none
 
-@media (max-width: 320px)
-    .banner h1
-        font-size: 18px
-    .overview
-        .header .menulist ul 
-            li.button
-                margin-left: calc((100% - 60%)/2)
-                width: 60%
-                .text
-                    padding-top: 14px
-                    padding-left: 8%
-    .title-colored
-        font-size: 16px
-    .footer-links
-        .redbutton
-            margin-left: calc((100% - 60%)/2)
-            width: 60%
-            a .text
-                padding-top: 14px
-                padding-left: 8%
-        .mail
-            .img-cont
-                margin-left: 0
+// @media (max-width: 320px)
