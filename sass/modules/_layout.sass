@@ -4,6 +4,8 @@
         padding: calc( (92.5vh - 337px)/2 ) 15px
         color: #FFF
     #video-viewport
+        background-image: url('./img/poster.jpg')
+        @include bgdef
         position: absolute
         top: 0
         left: 0
@@ -45,17 +47,17 @@
                 bottom: 0
                 background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.8))
         .swiper-pagination-bullet
-            background: $red
+            background: $yellow
             border: none
             opacity: 1
         .swiper-pagination-bullet-active
             opacity: 1
-            background: $yellow
+            background: $purple
         .swiper-wrapper
             .blog.slide-container
                 padding: 30vh 0 20vh
     .swiper-button-prev, .swiper-container-rtl .swiper-button-next, .swiper-button-next, .swiper-container-rtl .swiper-button-prev
-        color: $yellow !important
+        color: $purple !important
         outline: none !important
     .swiper-button-prev, .swiper-container-rtl .swiper-button-next
         left: 25px !important
@@ -171,8 +173,8 @@
             text-decoration: none
             position: relative
             &:hover, &:active
-                color: $red
-                border-color: $red
+                color: $yellow
+                border-color: $yellow
                 background: none
                 cursor: pointer !important
                 transform: scale(1.2)
