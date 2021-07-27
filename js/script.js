@@ -43,13 +43,4 @@ $(document).ready(function(){
             speed: 1000
         });
     }
-
-    var animation = bodymovin.loadAnimation({
-        container: document.getElementById('lottie-follower'),
-        path: './soccer-fans.json',
-        renderer: 'svg',
-        loop: true,
-        autoplay: true
-    });
-
 });
