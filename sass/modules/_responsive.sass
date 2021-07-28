@@ -4,9 +4,48 @@
                 
 // @media (min-width: 1025px) and (max-width: 1280px)
 
-// @media (min-width: 992px) and (max-width: 1024px)
+@media (min-width: 992px) and (max-width: 1280px)
+    .video-banner
+        height: 650px
+        #video-viewport
+            height: 675px !important
+        video
+            width: 1200px !important
+            height: 850px !important
+        .textual
+            padding: calc( (675px - 337px)/2) 15px
+            .col-md-offset-2
+                margin-left: 10%
+                width: 80%
 
-// @media (min-width: 768px) and (max-width: 991px)
+@media (min-width: 768px) and (max-width: 991px)
+    .video-banner, 
+        height: 650px
+        #video-viewport
+            height: 675px !important
+        video
+            width: 1200px !important
+            height: 850px !important
+        .textual
+            padding: calc( (675px - 337px)/2) 15px
+    #banner-slider .swiper-container
+        max-height: 60vh
+    #banner-slider .swiper-container .swiper-wrapper .slide-container
+        min-height: 60vh
+        max-height: 60vh
+    #banner-slider .swiper-container .swiper-wrapper .swiper-slide
+        max-height: 70vh
+    #banner-slider .swiper-container .swiper-wrapper .blog.slide-container
+        padding: 24vh 0 0
+    .laureus .imgcontainer.pad30
+        padding: 50px 15px 0
+    .supporters 
+        .supporter:nth-child(n+4)
+            padding-top: 30px
+        .supporter:nth-child(3n+1)
+            clear: both
+    .footer .icons a
+        padding: 8px 10px
 
 @media (min-width: 992px)
     .partners .logo-container .partner:nth-child(3n+1)
@@ -66,9 +105,9 @@
     .footer
         p
             margin-bottom: 30px
+            text-align: center
         .icons
-            a
-                float: left
+            text-align: center
     .hide-content
         &::before
             content: ''
