@@ -138,13 +138,19 @@
     .supporter 
         .img
             content: ''
-            background: rgba(253, 205, 10, 0.2)
+            background-color: rgba(20, 80, 202, 0.1)
             height: 125px
             background-repeat: no-repeat
             background-position: center
             background-size: 100px
+            transition: all 0.1s linear
+            &:hover
+                background-color: rgba(20, 80, 202, 0.2)
+                background-size: 110px
         .img.vertical
             background-size: 70px
+            &:hover
+                background-size: 80px
 
 
 .footer
