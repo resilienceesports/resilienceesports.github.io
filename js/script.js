@@ -43,4 +43,18 @@ $(document).ready(function(){
             speed: 1000
         });
     }
+
+    //Video play embed
+    $('.video-embed-toggle').click(function() {
+        // var now_el = $(this);
+        var vid_embed_src = $(this).data( "src" ) + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0";
+        var target_el = $(this).data( "target" );
+        $(target_el).addClass('active');
+        $(target_el).css('opacity', '0');
+        $(target_el).css('background', 'none');
+        $(target_el).html("<iframe id='banner-video' style='width: 100%; margin-bottom:-5px; border-radius: 20px; height:" + $(target_el).outerHeight() + "px;' src='" + vid_embed_src + "' frameborder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>");
+        $(target_el).addClass('active');
+        $(target_el).css('opacity', '1');
+        $(target_el).css('cursor', 'auto');
+    });
 });

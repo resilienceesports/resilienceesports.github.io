@@ -1,7 +1,15 @@
+.topbanner
+    background: hsla(191, 75%, 60%, 1)
+    background: linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%)
+    background: -moz-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%)
+    background: -webkit-linear-gradient(90deg, hsla(191, 75%, 60%, 1) 0%, hsla(248, 87%, 36%, 1) 100%)
+    .logo
+        width: 150px
+
 .video-banner
-    height: 92.5vh
+    height: 75vh
     .textual
-        padding: calc( (92.5vh - 337px)/2 ) 15px
+        padding: calc( (75vh - 271px)/2 ) 15px
         color: #FFF
     #video-viewport
         background-image: url('./img/poster.jpg')
@@ -126,6 +134,16 @@
             z-index: 3
         .img.vertical
             background-size: 70px
+        .img.with-popup
+            cursor: pointer
+            transition: all 0.1s linear
+            &:hover
+                transform: scale(1.1)
+                &::after
+                    height: 260px
+                    width: 260px
+                    top: calc( 50% - 130px )
+                    left: calc( 50% - 130px )
 
 @keyframes spin
     0% 
@@ -133,6 +151,35 @@
     100% 
         transform: rotate(360deg)
 
+
+.laureus
+    .imager
+        .imgcontainer
+            cursor: pointer
+            position: relative
+            background-image: url('./img/laureus-banner.png')
+            @include bgdef
+            border-radius: 4px
+            &::before
+                content: ''
+                @include bgdef
+                width: 55px
+                height: 55px
+                background-image: url('./img/playbut.svg')
+                position: absolute
+                top: calc(50% - 27.5px)
+                left: calc(50% - 27.5px)
+                z-index: 10
+                transition: 0.2s all linear
+            &:hover
+                &::before
+                    width: 75px
+                    height: 75px
+                    top: calc(50% - 37.5px)
+                    left: calc(50% - 37.5px)
+        .imgcontainer.active
+            &::before
+                display: none
 
 .supporters 
     .supporter 
@@ -152,6 +199,52 @@
             &:hover
                 background-size: 80px
 
+.modal-open 
+    .modal 
+        padding-right: 0 !important
+
+.modal
+    padding-top: 100px
+    padding-bottom: 50px
+    padding-left: 0!important
+
+.modal-backdrop
+    background-color: $purple
+
+.modal-backdrop.in
+    opacity: 1
+
+.modal-content
+    padding: 90px 15% 75px
+    border-radius: 0
+    border: none
+    background: #FFF
+    -webkit-box-shadow: 0 0 20px rgba(0,0,0,.2)
+    box-shadow: 0 0 20px rgba(0,0,0,.2)
+    button.close
+        position: absolute
+        right: 30px
+        top: 30px
+        opacity: 1
+        border-radius: 55%
+        height: 29px
+        width: 29px
+        outline: none!important
+        z-index: 3
+        background: 0 0 !important
+    .image-cont
+        width: 50%
+        margin: -50% 0 0 25%
+    .textual
+        text-align: center
+
+.fade-scale
+    opacity: 0
+    -webkit-transition: all .75s ease-in-out
+    transition: all .75s ease-in-out
+
+.fade-scale.in
+    opacity: 1
 
 .footer
     padding-top: 30px
