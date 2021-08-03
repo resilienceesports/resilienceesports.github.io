@@ -57,6 +57,8 @@
         <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-EFTKRHW9BH');</script>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
+        <script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
     </head>
     <body>
 
@@ -122,7 +124,11 @@
                     <div class="row">
                         <div class="imager col-md-6">
                             <div class="imgcontainer pad30">
-                                <img src="./img/follower-banner.jpg" alt="Resilience Esports FIFA21 Invitational" />
+                                <!-- <img src="./img/follower-banner.jpg" alt="Resilience Esports FIFA21 Invitational" /> -->
+                                <video id="my-video" class="video-js" controls preload="auto" height="425" poster="./img/follower-banner.jpg" data-setup="{}" autoplay>
+                                    <source src="./video/intro.mp4" type="video/mp4" />
+                                    <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+                                </video>
                             </div>
                         </div>
                         <div class="textual col-md-6 pad30">
